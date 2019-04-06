@@ -1,0 +1,39 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Anthony",
+      "surname": "Stark",
+      "birthday": "29-05-1970",
+      "phone": "678-136-7091",
+      "address": "Malibu, Point Dume, 90265"
+    },
+    {
+      "id": 2,
+      "name": "Jake",
+      "surname": "Peralta",
+      "birthday": "20-06-1981",
+      "phone": "678-136-7092",
+      "address": "New York, Brooklyn, 99"
+    },
+    {
+      "id": 3,
+      "name": "Peter",
+      "surname": "Parker",
+      "birthday": "10-08-2001",
+      "phone": "678-136-7093",
+      "address": "New York,Ingram Street, 20"
+    }
+  ],
+
+  "tony": [
+    {
+      "id": 1,
+      "name": "Anthony",
+      "surname": "Stark",
+      "birthday": "29-05-1970",
+      "phone": "678-136-7091",
+      "address": "Malibu Point 10880, 90265"
+    }
+  ]
+}

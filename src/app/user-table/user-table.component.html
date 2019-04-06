@@ -1,0 +1,25 @@
+<app-edit-modal #editModal></app-edit-modal>
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+     style="min-width: 980px;">
+  <div class="container-fluid">
+    <div class="well">
+      <div class="row -pull-left">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <app-user-table-header [selectedUserList]="getSelectedUsers()"
+                                 (usersToEdit)="editModal.openModal($event)"></app-user-table-header>
+          <div *ngIf="userList; else noData">
+            <div *ngFor="let user of userList">
+              <app-user-table-row [user]="user"
+                                  (userToEdit)="editModal.openModal($event)"
+                                  (userToDelete)="deleteUser($event)"></app-user-table-row>
+            </div>
+          </div>
+          <ng-template>
+            <tbody #noData>
+            </tbody>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

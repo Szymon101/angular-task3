@@ -1,0 +1,12 @@
+/*MODAL START*/
+.open-modal {
+  display: block;
+  background-color: rgba(37, 28, 28, 0.72);
+}
+
+.close-modal {
+  display: none;
+}
+
+/*MODAL END*/
+

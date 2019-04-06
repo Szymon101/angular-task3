@@ -1,0 +1,33 @@
+<div #editModal class="modal"
+     role="dialog">
+  <div class="modal-dialog"
+       style="display: table">
+    <div class="modal-content"
+         style="width: 80vw">
+      <div class="modal-header"
+           style="vertical-align: middle">
+        <h5 style="display: inline-block" class="modal-title">Edycja</h5>
+        <div class="pull-right btn-group">
+          <button type="button"
+                  class="btn btn-light btn-sm btn-custom"
+                  data-dismiss="modal"
+                  (click)="closeModal()">
+                  Anuluj
+          </button>
+          <button class="btn btn-primary btn-sm btn-custom"
+                  (click)="closeModal()">
+                  Zapisz
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div>
+          <app-modal-header *ngIf="userList"></app-modal-header>
+        </div>
+        <div *ngFor="let user of userList">
+          <app-modal-row [user]="user"></app-modal-row>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

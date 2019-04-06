@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+@import "../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css";
+@import "../node_modules/@fortawesome/fontawesome-free/css/brands.css";
+@import "../node_modules/@fortawesome/fontawesome-free/css/solid.css";
+
+.btn-custom{
+  font-size: 12px;
+  border: 1px solid transparent
+}
+
+.btn-primary{
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#54b4eb),color-stop(60%,#2fa4e7),to(#1d9ce5));
+}
+
+.btn-danger{
+  background-image: linear-gradient(#ff6707,#dd5600 60%,#c94e00);
+}
+
+.btn-light{
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#e0e0fa),color-stop(30%, #e0e0e6),to(#e0e0e0));
+}
+
